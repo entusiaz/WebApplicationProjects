@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block title %} Login -
+{{ block.super }} {% endblock %} {% block body %}
+
+ <section class="section-5 p-0 text-center">
+        <div class="container-fluid">
+
+          <div class="col-md-12 col-sm-12  pt-5">
+            <h1>Login</h1>
+            <p>
+              Type in your username and password to access your account
+            </p>
+          </div>           
+              <div class="desktop  pb-5">
+                <div class="d-flex flex-row justify-content-center">
+                  <form method="post" class="col-md-4 col-12 text-left">
+                    {{ form|crispy }} {% csrf_token %}
+                    <button type="submit" class=" primary-cta col-md-12 col-12 btn btn-dark px-5 py-2 primary-btn">Login</button>   
+                    <div>
+                    Don't have an account yet? <a href="{% url 'user:register' %}">Register</a> 
+                  </div>
+                  </form>
+                </div>
+            </div>          
+          </div>
+        </div>
+      </section>
+
+{% endblock %}

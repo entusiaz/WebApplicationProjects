@@ -1,0 +1,88 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, "Montserrat", BlinkMacSystemFont, “Segoe UI”,
+    “Oxygen”, “Ubuntu”, “Cantarell”, “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
+}
+
+.home {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+header,
+section {
+  overflow-x: hidden;
+}
+
+header {
+  /* min-height: 3rem; */
+  background-color: #048188;
+  color: azure;
+}
+
+.navbar.navbar-default {
+  /* background-color: #350a0a; */
+}
+nav .brand {
+  font-weight: bold;
+}
+
+.section-1 {
+  max-width: 100%;
+  color: #00676d;
+  padding-top: 1em;
+  margin: 0;
+  padding-bottom: 1em;
+  background-color: #c7fdd5;
+  font-family: “Cantarell”;
+}
+.primary-cta {
+  background-color: #048188;
+}
+.primary-cta:hover {
+  background-color: #00946f;
+}
+.primary-cta:active {
+  background-color: #2a3435;
+}
+.section-1 h1 {
+  font-weight: 600;
+}
+
+footer {
+  color: rgb(230, 230, 230);
+  max-width: 100%;
+  margin: 0;
+  background-color: #2a3435;
+  font-family: "Montserrat";
+  width: 100%;
+  clear: both;
+
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0rem;
+
+  text-align: center;
+}
+footer p {
+}

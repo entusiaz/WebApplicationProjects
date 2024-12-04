@@ -1,0 +1,37 @@
+{% extends 'base.html' %} 
+
+{% load static %} 
+
+{% block title %} Homepage {% endblock %} 
+
+{% block body %}
+
+
+<!-- Section-1 BANNER -->
+<section class="section-1 banner m-0">
+  <div class="container">
+    <div class="row d-flex pb-5">
+      <div
+        class="col-12 col-md-5 text-left justify-content-center align-self-center"
+      >
+        <div>
+          <h1 class="display-5 mt-2">
+            Ask other farmers questions and answer their questions too
+          </h1>
+          <p class=" text-left">
+           Clear all your doubts when other experienced farmers answer your questions.
+            You will also join the biggest network of agricultural professionals.
+          </p>
+            <a href="{% url 'user:login' %}" class="text-left primary-cta btn btn-dark px-5 py-2 primary-btn">
+              Start Now
+            </a>
+        </div>
+      </div>
+      <div class="col-12 col-md-7 pt-5 pb-5 justify-content-center align-self-center">
+        <img src="{% static "farm-cart.png" %}" alt="farm-market" class="img-fluid" >
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

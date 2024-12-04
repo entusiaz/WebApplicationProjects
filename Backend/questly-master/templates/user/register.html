@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block body %}
+
+<section class="section-5 p-0 text-center">
+  <div class="container-fluid">
+
+    <div class="col-md-12 col-sm-12  pt-5">
+      <h1>Register for Questly</h1>
+      <p>
+        Input your details. We will not share your details with anyone.
+      </p>
+    </div>           
+        <div class="desktop  pb-5">
+          <div class="d-flex flex-row justify-content-center">
+            <form method="post" class="col-md-4 col-12 text-left">
+              {% csrf_token %} {{ form | crispy }}
+              <button type="submit" class=" primary-cta col-md-12 col-12 btn btn-dark px-5 py-2 primary-btn">Register</button>   
+              <div>
+              Have an account already? <a href="{% url 'user:login' %}">Login</a> 
+            </div>
+            </form>
+          </div>
+      </div>          
+    </div>
+  </div>
+</section>
+{% endblock %}
